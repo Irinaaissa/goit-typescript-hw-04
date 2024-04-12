@@ -2,14 +2,14 @@
 
 
 import React, { useState } from 'react';
-type UseFormInput = {
-  value: string;
-  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
- 
-};
+// type UseFormInput = {
+  // value: string;
+  // onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+//  
+// };
 
-export function FormComponent(initialValue: string):UseFormInput {
-  const [value, setValue] = useState(initialValue);
+export function FormComponent(){
+  const [value, setValue] = useState("");
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value);
